@@ -1,0 +1,33 @@
+{
+  "name": "rest-api-nodejs-mysql",
+  "version": "1.0.0",
+  "description": "Restful CRUD API with Node.js, Express and MySQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --watch --config webpack.config.js",
+    "dev": "nodemon src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-mysql-session": "^2.1.5",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "pg": "^8.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.16.0",
+    "nodemon": "^2.0.6",
+    "nodemon-webpack-plugin": "^4.3.2",
+    "webpack": "^5.11.0",
+    "webpack-cli": "^4.3.0",
+    "webpack-node-externals": "^2.5.2"
+  }
+}
