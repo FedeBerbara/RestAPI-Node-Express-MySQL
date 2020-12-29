@@ -12,7 +12,7 @@ DROP TABLE IF EXISTS customers;
 * But if the table doesn't exist this query will create it with the data that we specify below
 */
 CREATE TABLE IF NOT EXISTS customers (
-	id INT PRIMARY KEY AUTO_INCREMENT, 
+	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
     email VARCHAR(100) UNIQUE NOT NULL, 
