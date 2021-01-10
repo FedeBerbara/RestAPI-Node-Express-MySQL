@@ -43,6 +43,10 @@ Database Connected
 
 _In this point we are more than ready to make the tests!!_
 
+## MySQL ⚙️
+
+_Before make test check the file with name createCustomerDB.sql en run the commands in Workbench o console_
+
 ## Endpoints ⚙️
 
 _For test in my case I use [POSTMAN](https://www.postman.com/)_
@@ -90,7 +94,7 @@ _The answer will be something like:_
 
 ---
 _This request will create a customer._
-_POST method:_ **localhost:xxxx/customers/addCustomer**
+_POST method:_ **localhost:xxxx/customers/add**
 
 _The customer information you enter on Postman should look something like:_ 
 ```
@@ -104,7 +108,7 @@ _The customer information you enter on Postman should look something like:_
 
 ---
 _This request will be able to update the data of a specific customer._
-_PUT method:_ **localhost:xxxx/customers/editCustomer/:id**
+_PUT method:_ **localhost:xxxx/customers/edit/:id**
 
 _You can change the data of a specific customer for example:_ 
 ```
@@ -128,7 +132,7 @@ _to_:
 
 ---
 _This request will remove a specific customer._
-_DELETE by ID method:_ **localhost:xxxx/customer/deleteCustomer/:id**
+_DELETE by ID method:_ **localhost:xxxx/customer/delete/:id**
 
 ---
 _This request will remove all records from the customers table._
